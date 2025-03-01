@@ -1,7 +1,7 @@
 Literally just uploading this to show i did it :p
 https://x.com/IoOrBust/status/1371440605759373315
 
-It's a cellular automata that factors integers. You need to run it first to figure out how many generations it takes to factor it, and to see how many columns you need, because PIL needs to know in advance, as far as I knew in 2021. I will not be updating this again, probably
+It's a cellular automata that factors integers. You need to run it first to figure out how many generations it takes to factor it, and to see how many columns you need, because PIL needs to know in advance, as far as I knew in 2021. I will not be updating this again, probably. This is the code as it existed in 2021 when I posted the tweet. After that, I got very burnt out on programming for several years. The code exists as-is, completely unmaintainable. lmao
 
 It takes a "command" in the form `FXXXX`. It then copies the number, and initializes a set of columns, D, that will be iterating from 1 to `XXXX`. At this point, the tape looks like `XXXXcXXXX.DDDDf`. For example, `0110c0110.0001f`.
 
