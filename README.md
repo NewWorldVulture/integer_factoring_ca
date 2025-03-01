@@ -14,5 +14,5 @@ If `XXXX` is divisible by `DDDD`, it sends a message to copy `DDDD` over to the 
 
 Backing up to subtraction, after a copy is triggered, if the first subtraction performed brings `SSSS` to zero (meaning that `DDDD` is equal to `XXXX`, it immediately copies `DDDD` to the factors columns, and wipes all the colums to the left of `f`, only leaving the factors behind.
 
-It's been long enough that I'd need to spend days understanding the intricacies of this, but I stand by this tweet:
+It's been long enough that I'd need to spend days to understand the specifics of this, but I stand by this tweet:
 ![image](https://github.com/user-attachments/assets/f556738c-fc60-4fba-9bf6-ff6fed3ae7ef)
