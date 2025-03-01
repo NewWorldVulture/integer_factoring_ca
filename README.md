@@ -8,7 +8,7 @@ It takes a "command" in the form `FXXXX`. It then copies the number, and initial
 Quite a lot of the machinery in the cellular automata is just responsible for the initialization described above. I could've saved something like 15 states by requiring the initial tape to be the above.
 
 
-The CA then subtracts `DDDD` from the second copy of `XXXX`, producing `SSSS`. Then the CA checks if `SSSS` is greater than zero. If it is, it subtracts `DDDD` again. When it subtracts, if it attempts to borrow from the `c` column (meaning that `DDDD` is greater than `SSSS`), it errors out (purple) and it knows that `XXXX` is not divisible by `DDDD`.
+The CA then subtracts `DDDD` from the second copy of `XXXX`, producing `SSSS`. Then the CA checks if `SSSS` is greater than zero. All it does is check if it runs into a `1` anywhere in `XXXX`. If it's greater than 0, it subtracts `DDDD` again. When it subtracts, if it attempts to borrow from the `c` column (meaning that `DDDD` is greater than `SSSS`), it errors out (purple) and it knows that `XXXX` is not divisible by `DDDD`.
 
 If `XXXX` is divisible by `DDDD`, it sends a message to copy `DDDD` over to the factors. While it does this, it writes over `SSSS` with `XXXX` again. Tape is now `XXXXcXXXX.DDDDfDDDD`. Whether it copies it or not, it then adds 1 to DDDD. It repeats this process until `DDDD` is equal to `XXXX`
 
