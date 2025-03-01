@@ -13,3 +13,6 @@ The CA then subtracts `DDDD` from the second copy of `XXXX`, producing `SSSS`. T
 If `XXXX` is divisible by `DDDD`, it sends a message to copy `DDDD` over to the factors. While it does this, it writes over `SSSS` with `XXXX` again. Tape is now `XXXXcXXXX.DDDDfDDDD`. Whether it copies it or not, it then adds 1 to DDDD. It repeats this process until `DDDD` is equal to `XXXX`
 
 Backing up to subtraction, after a copy is triggered, if the first subtraction performed brings `SSSS` to zero (meaning that `DDDD` is equal to `XXXX`, it immediately copies `DDDD` to the factors columns, and wipes all the colums to the left of `f`, only leaving the factors behind.
+
+It's been long enough that I'd need to spend days understanding the intricacies of this, but I stand by this tweet:
+![image](https://github.com/user-attachments/assets/f556738c-fc60-4fba-9bf6-ff6fed3ae7ef)
